@@ -4,7 +4,7 @@ import env from "dotenv";
 
 env.config();
 
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.API_KEY || "");
 const app = express();
 const port = 3000;
 
